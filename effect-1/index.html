@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Light</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="./img/bg.jpg" id="bg">
+        <img src="./img/moon.png" id="moon">
+        <img src="./img/mountain.png" id="mountain">
+        <img src="./img/road.png" id="road">
+        <h2 id='text'>Moon Light</h2>
+    </section>
+    <main>
+        <h3>Parallax</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit nulla veritatis eveniet optio numquam, voluptatum, est sunt obcaecati labore reiciendis odit porro cum praesentium aspernatur sapiente id dolores esse quam necessitatibus. Dolore nobis excepturi sed a harum quas ad possimus ipsum. Ab, repellat? Corporis delectus, hic consectetur rem accusamus quisquam provident animi quod totam at, expedita veniam eligendi! Impedit, possimus cupiditate. Velit omnis odio eaque soluta, aut repellendus voluptates neque eveniet. Dolor accusantium dicta itaque qui. Facere ad doloribus fugit repellendus sapiente expedita dignissimos ea dolorum minus accusantium harum, illum, explicabo molestiae assumenda illo recusandae voluptatum rerum qui aspernatur?</p>
+    </main>
+    <script type='text/javascript'>
+        let bg= document.getElementById('bg');
+        let moon= document.getElementById('moon');
+        let mountain= document.getElementById('mountain');
+        let road= document.getElementById('road');
+        let text= document.getElementById('text');
+
+        window.addEventListener('scroll',function(){
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px'
+            moon.style.left = value * 0.5 + 'px'
+            mountain.style.top = value * 0.15 + 'px'
+            road.style.top = value * 0.15 + 'px'
+            text.style.top = value * 1 + 'px'
+
+        })
+    </script>
+
+</body>
+</html>
