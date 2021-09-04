@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade Out</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <video autoplay='' muted='' loop='' src="video.mp4"></video>
+    </section>
+    <section>
+        <div class="content">
+            <h2>Fade Out Background On Scroll</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas fuga facilis ducimus reprehenderit maxime molestias assumenda totam tempora at atque odio animi ex, quibusdam veritatis ea quia, laboriosam dolorem dolore aliquam fugit aspernatur? Quas consectetur dignissimos asperiores assumenda, rem quis reiciendis possimus provident vero voluptas culpa soluta sit quos repudiandae amet cumque sapiente ab natus beatae minima, dolorem, excepturi at! Praesentium assumenda sint tempore modi mollitia voluptate quisquam exercitationem optio quia labore error nisi vel nostrum, soluta numquam nihil aut veritatis dolorem. Libero voluptatum maiores, provident officia voluptate voluptatem aspernatur laborum ducimus, nisi tempora tenetur fugit rem culpa voluptates possimus.</p>
+            <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, accusantium dolorem nulla similique odio recusandae ab iusto magnam temporibus impedit, dignissimos doloribus repudiandae eveniet dolore! Consequuntur perspiciatis cumque odio autem maxime dicta quia adipisci optio! Natus omnis voluptatem quibusdam temporibus distinctio. Pariatur saepe delectus sint maxime iure obcaecati, reprehenderit veritatis! ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum totam deleniti, sequi doloremque ab? Quam dolores placeat iste asperiores impedit deserunt perspiciatis magni nemo maiores eligendi, error voluptate sit ut, fugit beatae aperiam consequuntur fugiat architecto delectus ipsam repellat?</p>
+            <div>
+                <p class='special'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, deserunt. Aliquid accusamus cum exercitationem officiis, saepe velit quis doloremque iure corporis aut, itaque voluptas ex adipisci non illum. Quisquam alias repellat, deleniti itaque suscipit laudantium nemo beatae, nesciunt neque sapiente molestias voluptate vel dicta tempora corporis deserunt harum commodi optio.</p>
+                <p class='special'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, deserunt. Aliquid accusamus cum exercitationem officiis, saepe velit quis doloremque iure corporis aut, itaque voluptas ex adipisci non illum. Quisquam alias repellat, deleniti itaque suscipit laudantium nemo beatae, nesciunt neque sapiente molestias voluptate vel dicta tempora corporis deserunt harum commodi optio.</p>
+            </div>
+        </div>
+    </section>
+    <script type='text/javascript'>
+        let video = document.querySelector('video');
+        window.addEventListener('scroll', function(){
+            let value = 1 + window.scrollY/-600;
+            video.style.opacity = value;
+        })
+    </script>
+</body>
+</html>

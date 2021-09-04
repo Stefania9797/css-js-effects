@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+body{
+    background: #000;
+}
+.content{
+    position: absolute;
+    top: 30px;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.content div{
+    display:flex;
+}
+.special{
+    margin:10px 10px;
+}
+section video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+p , h2{
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+} 
+section h2{
+ position: relative;
+ font-size: 3rem;
+}
